@@ -1,0 +1,21 @@
+{
+  "name": "dio-node-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env src/server.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && --env-file=.env dist/server.js"
+  },
+  "keywords": [],
+  "author": "Denis Cunha",
+  "license": "ISC",
+  "description": "API com Node JS e HTTP",
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.6",
+    "typescript": "^5.5.2"
+  }
+}
